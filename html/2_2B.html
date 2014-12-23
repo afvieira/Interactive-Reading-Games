@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/geral.css">
+    </head>
+    <body>
+        <div id="top">
+            INDA ESTOU A APRENDER... Desenvolvimento de uma plataforma educativa online de avaliação e intervenção nas dificuldades de aprendizagem da leitura
+        </div>
+        <div id="esquerda">
+            <nav>
+                <ol>
+                    <li><a href="1.html">Tarefas de Segmentação/Análise Silábica</a></li>
+                    <li>Tarefas de identificação da sílaba igual na posição inicial</li>
+                    <ul>
+                        <li><a href="2_1A.html">Item 1 A</a></li>
+                        <li><a href="2_1B.html">Item 1 B</a></li>
+                        <li><a href="2_2A.html">Item 2 A</a></li>
+                        <li><a href="2_2B.html">Item 2 B</a></li>
+                        <li><a href="2_3A.html">Item 3 A</a></li>
+                        <li><a href="2_3B.html">Item 3 B</a></li>
+                    </ul>
+                    <li>Tarefas de adição de sílaba</li>
+                    <ul>
+                        <li><a href="3_1.html">Item 1</a></li>
+                        <li><a href="3_2.html">Item 2</a></li>
+                        <li><a href="3_3.html">Item 3</a></li>
+                    </ul>  
+                    <li>Tarefas de Omissão/supressão</li>
+                    <ul>
+                        <li><a href="4_1.html">Item 1</a></li>
+                        <li><a href="4_2.html">Item 2</a></li>
+                        <li><a href="4_3.html">Item 3</a></li>
+                    </ul>
+                </ol>
+            </nav>
+        </div>
+        <div id="direita">
+            <div id="container" align="center">
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </body>
+    <footer>
+        André Vieira - Universidade do Minho
+    </footer>
+    
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script type="text/javascript" src="../javascript/fabric.js"></script>
+    <script type="text/javascript" src="../javascript/2_2B.js"></script>
+    <script type="text/javascript" src="../javascript/jquery-1.11.1.js"></script>
+    <!-- ================== END BASE JS ================== -->
+    <script>    
+        $(document).ready(function() {
+            App.init();
+        });
+    </script>
+</html>
