@@ -3,6 +3,10 @@
   background-color: #EEE;
 }
 
+input{
+    text-align:center; 
+}
+
 #container 
 {
   top: 10px;
@@ -33,10 +37,8 @@
 footer {
   left: 0px;
   text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
   position:absolute;
   bottom:0;
-  width:100%;
   background:#ccc;
 }
