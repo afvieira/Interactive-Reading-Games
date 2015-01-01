@@ -2,7 +2,8 @@ fabric.Object.prototype.originX = fabric.Object.prototype.originY = 'center';
 fabric.Object.prototype.transparentCorners = false;
 
 var canvas = new fabric.Canvas('canvas', {
-    selection: false
+    selection: false,
+    hoverCursor: 'pointer'
 });
 
 var answers = {
@@ -29,7 +30,10 @@ function loadImagesAndSounds() {
         canvas.add(img.set({
             left: 150,
             top: 100,
-            selectable: false
+            hasControls: false,
+            hasBorders: false,
+            lockMovementX: true,
+            lockMovementY: true
         }).scale(0.4));
 
         img.on('mousedown', function() {
@@ -49,7 +53,10 @@ function loadImagesAndSounds() {
         canvas.add(img.set({
             left: 450,
             top: 100,
-            selectable: false
+            hasControls: false,
+            hasBorders: false,
+            lockMovementX: true,
+            lockMovementY: true
         }).scale(0.15));
 
         img.on('mousedown', function() {
@@ -69,7 +76,10 @@ function loadImagesAndSounds() {
         canvas.add(img.set({
             left: 150,
             top: 300,
-            selectable: false
+            hasControls: false,
+            hasBorders: false,
+            lockMovementX: true,
+            lockMovementY: true
         }).scale(0.3));
 
         img.on('mousedown', function() {
@@ -89,7 +99,10 @@ function loadImagesAndSounds() {
         canvas.add(img.set({
             left: 450,
             top: 300,
-            selectable: false
+            hasControls: false,
+            hasBorders: false,
+            lockMovementX: true,
+            lockMovementY: true
         }).scale(0.3));
 
         img.on('mousedown', function() {
