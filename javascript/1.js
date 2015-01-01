@@ -33,7 +33,8 @@ function loadImagesAndSounds() {
             hasControls: false,
             hasBorders: false,
             lockMovementX: true,
-            lockMovementY: true
+            lockMovementY: true,
+            opacity: 0.8
         }).scale(0.4));
 
         img.on('mousedown', function() {
@@ -56,7 +57,8 @@ function loadImagesAndSounds() {
             hasControls: false,
             hasBorders: false,
             lockMovementX: true,
-            lockMovementY: true
+            lockMovementY: true,
+            opacity: 0.8
         }).scale(0.15));
 
         img.on('mousedown', function() {
@@ -79,7 +81,8 @@ function loadImagesAndSounds() {
             hasControls: false,
             hasBorders: false,
             lockMovementX: true,
-            lockMovementY: true
+            lockMovementY: true,
+            opacity: 0.8
         }).scale(0.3));
 
         img.on('mousedown', function() {
@@ -102,7 +105,8 @@ function loadImagesAndSounds() {
             hasControls: false,
             hasBorders: false,
             lockMovementX: true,
-            lockMovementY: true
+            lockMovementY: true,
+            opacity: 0.8
         }).scale(0.3));
 
         img.on('mousedown', function() {
@@ -226,11 +230,21 @@ function showAnswer(num, img_num) {
     };
 }
 
-/* Application Controller
+/* Events on canvas
 ------------------------------------------------ */
 
-canvas.on('mouse:down', function(evt) {
-    console.log("position: X:" + evt.e.offsetX + " Y:" + evt.e.offsetY);
+canvas.on({
+    'mouse:over': function(evt) {
+        evt.target.setOpacity(1);
+        canvas.renderAll();
+    },
+    'mouse:out': function(evt) {
+        evt.target.setOpacity(0.8);
+        canvas.renderAll();
+    },
+    'mouse:down': function(evt) {
+        console.log("position: X:" + evt.e.offsetX + " Y:" + evt.e.offsetY);
+    }
 });
 
 /* Application Controller
