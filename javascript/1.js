@@ -230,7 +230,7 @@ function loadEvents() {
         } else {
             alert("FALHOU");
         };
-    }
+    };
 
     /* Events on canvas
     ------------------------------------------------ */
